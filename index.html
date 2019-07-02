@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Trivia Game</title>
+        
+        <!-- Linking to Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      </head>
+      
+      <!--This layout is inspired by jaymar14 /TriviaGame -->
+      <body>
+          <!--Outside container-->
+        <div class ="container">
+            <div class ="row">
+                <div class = "col-lg-12">
+                        Background here is some type of light blue or other pastel or other background 
+                </div>
+                   
+            </div> 
+            
+        </div> <!--end of Container-->
+
+        <button id="start">Start</button> <!--QUiz start button-->
+        <button id="submit">Submit</button> <!--QUiz stop/submit button-->
+
+        <div id="results">  <!--start of div Results-->
+            Results appear here
+        </div> <!--end of div Quiz-->
+
+        <!--JQuery CDN-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+
+        <!--link to JS file-->
+        <script src="assets/javascript/app.js"> 
+        
+        // JS var reference to html div id "QUIZ"
+        var quizContainer = document.getElementById("quiz");
+
+        // JS var reference to html div id "RESULTS"
+        var resultsContainer = document.getElementById("results");
+
+        // JS var reference to html button ids "START" & "SUBMIT"
+        var startButton = document.getElementById("start");
+        var submitButton = document.getElementById("submit");
+        
+        //function to run quiz
+        function runQuiz (){};
+
+        //function to show answers
+        function showAnswers (){};
+
+        // quiz runs here
+        runQuiz();
+
+        // clicking submitButton shows correct answers
+        submitButton.addEventListener("click", showAnswers); 
+
+
+
+
+        </script>
+      </body>
+
+</html>
