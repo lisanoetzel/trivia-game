@@ -65,6 +65,12 @@
             //Hide the start game button
             $('#start-game').hide();
 
+            //Hide the text "are you a music buff, etc."
+            $('#card-text').hide();
+
+            //Display questions
+            $('#questions').show();
+
             //Display remaining time
             $('#remaining-time').show();
 
