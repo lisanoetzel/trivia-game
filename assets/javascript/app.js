@@ -30,7 +30,7 @@
         //options
          options: {   
             q1: ['Giuseppe Verdi', 'Jacopo Peri', 'Claudio Monteverdi'],
-            q2: [1598, 1698, 1798],
+            q2: ['1598', '1698', '1798'],
             q3: ['Pagliaccio', 'Orfeo', 'Dafne'],
             q4: ['Hercules', 'Venus and Adonis','Dido and Aeneas'],
             q5: ['Opera comica', 'Opera seria', 'Opera nuova'],
@@ -39,7 +39,7 @@
         //answers
         answers: {
             q1: 'Jacopo Peri',
-            q2: 1598,
+            q2: '1598',
             q3: 'Dafne',
             q4: 'Venus and Adonis',
             q5: 'Opera comica',
@@ -94,7 +94,7 @@
             
             // gets all the questions then indexes the current questions
             var questionContent = Object.values(trivia.questions)[trivia.currentSet];
-            $('#question').text(questionContent);
+            $('#questions').text(questionContent);
             
             // an array of all the user options for the current question
             var questionOptions = Object.values(trivia.options)[trivia.currentSet];
